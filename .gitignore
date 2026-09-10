@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+
+# Data & DBs
+data/chroma_db/
+data/knowledge_graph.json
+data/test_graph.json
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
