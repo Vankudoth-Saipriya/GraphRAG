@@ -1,0 +1,247 @@
+[
+  {
+    "id": "Q-001",
+    "question": "Who is the primary supplier of microcontrollers for Autonomous Drive Unit ADU-7, and where are their key fabrication facilities?",
+    "ground_truth": "NexusChip Corp is the primary semiconductor supplier for microcontroller NX-9000 used in ADU-7. Their key fabrication facilities are located in Taiwan and South Korea.",
+    "expected_entities": ["NexusChip Corp", "NX-9000", "ADU-7", "Taiwan", "South Korea"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-002",
+    "question": "What is the secondary fallback supplier for NX-9000 microcontrollers, and under what condition do they assume 60% of production volume?",
+    "ground_truth": "QuantumSemi Systems (in Dresden, Germany) is the certified secondary supplier. They assume 60% of total production volume if Taiwan facilities experience a supply disruption exceeding 14 days.",
+    "expected_entities": ["QuantumSemi Systems", "Dresden", "Germany", "NX-9000", "Taiwan"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-003",
+    "question": "Which software module and third-party cryptographic library are used in ADU-7, and what compliance requirement applies to them in the EU?",
+    "ground_truth": "DriveOS v4.2, authored by CoreLogic GmbH, contains third-party cryptographic library LibCrypto-X. Under EU Directive 2026/89 and Cyber Resilience Act, LibCrypto-X must maintain FIPS 140-3 Level 3 certification.",
+    "expected_entities": ["DriveOS v4.2", "CoreLogic GmbH", "LibCrypto-X", "EU Directive 2026/89", "FIPS 140-3 Level 3"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-004",
+    "question": "If LibCrypto-X fails vulnerability audit VA-2026, what are the legal and commercial consequences for Autonomous Drive Unit ADU-7 in Europe?",
+    "ground_truth": "If LibCrypto-X fails audit VA-2026, Autonomous Drive Unit ADU-7 cannot be distributed within EU member states. Compliance documentation must be submitted to ETSI prior to Q3 distribution.",
+    "expected_entities": ["LibCrypto-X", "VA-2026", "ADU-7", "EU", "ETSI"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-005",
+    "question": "What battery chemistry and cell supplier are used in Titan PowerPack P-500, and what component manages thermal safety?",
+    "ground_truth": "Titan PowerPack P-500 uses 16 lithium-ion cell packs supplied by EnerCell Solutions utilizing Nickel-Manganese-Cobalt (NMC-811) chemistry. Thermal Management System TMS-2 (engineered by CoolTech Systems) manages thermal safety using Coolant-X7.",
+    "expected_entities": ["Titan PowerPack P-500", "EnerCell Solutions", "NMC-811", "TMS-2", "CoolTech Systems", "Coolant-X7"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-006",
+    "question": "What triggers Emergency Thermal Cutoff Fuse ETF-9, who manufactures it, and how fast does it interrupt the circuit?",
+    "ground_truth": "Failure of the TMS-2 coolant pump triggers Emergency Thermal Cutoff Fuse ETF-9, manufactured by Safetron Inc, which interrupts the circuit within 250 milliseconds.",
+    "expected_entities": ["TMS-2", "ETF-9", "Safetron Inc", "250 milliseconds"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-007",
+    "question": "What ESG contingency plan exists if refiner Cobalt Core Metals fails its RMI re-certification by June 2026?",
+    "ground_truth": "If Cobalt Core Metals fails RMI re-certification by June 2026, EnerCell Solutions must transition all raw cobalt procurement to Nordic Mining Group in Norway within 90 days.",
+    "expected_entities": ["Cobalt Core Metals", "RMI", "EnerCell Solutions", "Nordic Mining Group", "Norway"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-008",
+    "question": "How does DriveOS v4.2 react if Optical Camera Array C-40 lens coating exhibits degradation in ADU-7?",
+    "ground_truth": "DriveOS v4.2 triggers Fallback Perception Mode FPM-2, switching primary navigation reliance to LiDAR module L-100.",
+    "expected_entities": ["DriveOS v4.2", "C-40", "ADU-7", "Fallback Perception Mode FPM-2", "LiDAR module L-100"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-009",
+    "question": "What USMCA Regional Value Content (RVC) threshold must ADU-7 achieve, and what percentage is provided by the Austin assembly plant?",
+    "ground_truth": "ADU-7 must achieve a minimum of 75% USMCA Regional Value Content (RVC) for tariff-free import. Assembly operations at Apex Assembly Plant in Austin, Texas contribute 40% RVC.",
+    "expected_entities": ["USMCA", "75% RVC", "ADU-7", "Apex Assembly Plant", "Austin, Texas", "40% RVC"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-010",
+    "question": "What legal agreement protects Apex Dynamics if software vendor CoreLogic GmbH files for bankruptcy?",
+    "ground_truth": "Escrow Agreement EA-809 with NCC Group requires CoreLogic GmbH to maintain source code in third-party escrow. Upon bankruptcy, Apex Dynamics retains immediate rights to license source code and assume in-house maintenance.",
+    "expected_entities": ["CoreLogic GmbH", "Escrow Agreement EA-809", "NCC Group", "Apex Dynamics"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-011",
+    "question": "Which regional logistics centers hold sub-assembly replacement kits for Titan PowerPack P-500 field recalls under FRP-102?",
+    "ground_truth": "Replacement kits are stock-held at Regional Logistics Center RLC-Singapore and RLC-Panama.",
+    "expected_entities": ["Titan PowerPack P-500", "FRP-102", "RLC-Singapore", "RLC-Panama"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-012",
+    "question": "What operating temperature limit applies to EnerCell Solutions cell packs to maintain their 5,000 thermal cycle warranty?",
+    "ground_truth": "EnerCell Solutions cell packs are warrantied for 5,000 thermal cycles provided operating temperatures do not exceed 55°C.",
+    "expected_entities": ["EnerCell Solutions", "5,000 thermal cycles", "55°C"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-013",
+    "question": "Who manufactures Sensor Pack SP-3, where are they located, and which specific components are inside SP-3?",
+    "ground_truth": "Sensor Pack SP-3 is manufactured by OptiSense Systems in Japan. It includes LiDAR module L-100 and Optical Camera Array C-40.",
+    "expected_entities": ["OptiSense Systems", "Japan", "Sensor Pack SP-3", "LiDAR module L-100", "Optical Camera Array C-40"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-014",
+    "question": "What is the role of SiliconPower Inc in the ADU-7 product architecture?",
+    "ground_truth": "SiliconPower Inc manufactures Power Management IC PM-400, which manages power distribution for Autonomous Drive Unit ADU-7.",
+    "expected_entities": ["SiliconPower Inc", "Power Management IC PM-400", "ADU-7"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-015",
+    "question": "Who conducts semi-annual audits for the source code escrow of DriveOS v4.2?",
+    "ground_truth": "Deloitte Audit LLP performs semi-annual audits of the Escrow Agreement EA-809 source code escrow.",
+    "expected_entities": ["Deloitte Audit LLP", "DriveOS v4.2", "Escrow Agreement EA-809"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-016",
+    "question": "If Taiwan experiences a supply disruption of 20 days, how is microcontroller supply divided between NexusChip Corp and QuantumSemi Systems?",
+    "ground_truth": "Because the disruption exceeds 14 days, secondary supplier QuantumSemi Systems automatically assumes 60% of production volume, while NexusChip Corp retains the remaining 40%.",
+    "expected_entities": ["Taiwan", "NexusChip Corp", "QuantumSemi Systems", "60%", "NX-9000"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-017",
+    "question": "What audit status is refiner Cobalt Core Metals currently under, and in which region are they located?",
+    "ground_truth": "Cobalt Core Metals in the Katanga region is currently under conditional audit status CS-2025.",
+    "expected_entities": ["Cobalt Core Metals", "Katanga region", "conditional audit status CS-2025"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-018",
+    "question": "What synthetic coolant is used by Thermal Management System TMS-2, and what is its target temperature threshold?",
+    "ground_truth": "TMS-2 uses synthetic dielectric coolant Coolant-X7 to maintain temperature below 45°C.",
+    "expected_entities": ["TMS-2", "Coolant-X7", "45°C"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-019",
+    "question": "Which global executive coordinates recall operations for Titan PowerPack P-500 under FRP-102?",
+    "ground_truth": "Global Service Operations VP Sarah Jenkins coordinates recall operations.",
+    "expected_entities": ["Sarah Jenkins", "FRP-102", "Titan PowerPack P-500"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-020",
+    "question": "Why do NexusChip microcontrollers imported directly from Taiwan contribute 0% towards USMCA Regional Value Content?",
+    "ground_truth": "They contribute 0% RVC because they are imported directly from Taiwan without undergoing regional processing in North America.",
+    "expected_entities": ["NexusChip", "Taiwan", "0% RVC", "USMCA"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-021",
+    "question": "Which North American suppliers contribute to the USMCA qualifying regional content for ADU-7 besides Apex Assembly Plant?",
+    "ground_truth": "Silicon Power Inc (Austin, TX) and OptiSense USA (San Jose, CA) provide qualifying regional components.",
+    "expected_entities": ["Silicon Power Inc", "OptiSense USA", "Austin, TX", "San Jose, CA"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-022",
+    "question": "What vulnerability audit code applies to LibCrypto-X under EU Directive 2026/89?",
+    "ground_truth": "Vulnerability audit VA-2026 applies to LibCrypto-X.",
+    "expected_entities": ["LibCrypto-X", "VA-2026", "EU Directive 2026/89"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-023",
+    "question": "Trace the complete chain of components, suppliers, and regulatory checks connected to Autonomous Drive Unit ADU-7.",
+    "ground_truth": "ADU-7 includes Microcontroller NX-9000 (supplied by NexusChip Corp, backed up by QuantumSemi Systems), Sensor Pack SP-3 (from OptiSense Systems with LiDAR L-100 and Camera C-40), Power Management IC PM-400 (SiliconPower Inc), and DriveOS v4.2 software (CoreLogic GmbH with LibCrypto-X). Compliance requires EU CRA / FIPS 140-3 and USMCA 75% RVC.",
+    "expected_entities": ["ADU-7", "NX-9000", "NexusChip Corp", "QuantumSemi Systems", "OptiSense Systems", "SP-3", "PM-400", "DriveOS v4.2", "CoreLogic GmbH", "LibCrypto-X"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-024",
+    "question": "What component triggers sub-assembly replacement in Titan PowerPack P-500 if its corrosion rate exceeds 5 microns/year?",
+    "ground_truth": "Emergency Thermal Cutoff Fuse ETF-9 triggers sub-assembly replacement under FRP-102 if its corrosion rate exceeds 5 microns/year.",
+    "expected_entities": ["ETF-9", "FRP-102", "Titan PowerPack P-500", "5 microns/year"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-025",
+    "question": "What organisation receives compliance documentation before ADU-7 is distributed in the EU in Q3?",
+    "ground_truth": "The European Telecommunications Standards Institute (ETSI) must receive compliance documentation prior to Q3 distribution.",
+    "expected_entities": ["ETSI", "ADU-7", "EU"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-026",
+    "question": "What is the relationship between Sensor Pack SP-3 and Microcontroller NX-9000 in ADU-7?",
+    "ground_truth": "Component NX-9000 directly integrates with Sensor Pack SP-3 manufactured by OptiSense Systems in Japan as part of the ADU-7 architecture.",
+    "expected_entities": ["NX-9000", "SP-3", "OptiSense Systems", "ADU-7"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-027",
+    "question": "Which responsible mining organization certifies cobalt origin for Apex Dynamics ESG Policy Section 4?",
+    "ground_truth": "The Responsible Minerals Initiative (RMI) certifies cobalt origin from responsible mining operations.",
+    "expected_entities": ["Responsible Minerals Initiative", "RMI", "Apex Dynamics ESG Policy Section 4"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-028",
+    "question": "What software fallback mode is engaged if Optical Camera Array C-40 degrades?",
+    "ground_truth": "DriveOS v4.2 engages Fallback Perception Mode FPM-2.",
+    "expected_entities": ["DriveOS v4.2", "C-40", "Fallback Perception Mode FPM-2"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-029",
+    "question": "What climate/geographic classification triggers Field Recall Protocol FRP-102 for Titan PowerPack P-500?",
+    "ground_truth": "High-humidity tropical zones (Zone 4B) trigger Field Recall Protocol FRP-102.",
+    "expected_entities": ["FRP-102", "Titan PowerPack P-500", "Zone 4B"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-030",
+    "question": "Which company holds the source code repository in escrow for CoreLogic GmbH?",
+    "ground_truth": "NCC Group holds the source code repository in secure third-party escrow under Escrow Agreement EA-809.",
+    "expected_entities": ["NCC Group", "CoreLogic GmbH", "EA-809"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-031",
+    "question": "What is the primary risk factor associated with vendor CoreLogic GmbH in Q1 2026?",
+    "ground_truth": "CoreLogic GmbH underwent financial restructuring in Q1 2026, leading to a Tier-1 High-Risk vendor classification.",
+    "expected_entities": ["CoreLogic GmbH", "Tier-1 High-Risk", "financial restructuring"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-032",
+    "question": "How many cell packs are in Titan PowerPack P-500, and what company manufactures them?",
+    "ground_truth": "Titan PowerPack P-500 contains 16 lithium-ion cell packs supplied by EnerCell Solutions.",
+    "expected_entities": ["16 lithium-ion cell packs", "EnerCell Solutions", "Titan PowerPack P-500"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-033",
+    "question": "If QuantumSemi Systems supplies NX-9000, in which European city and country is their plant situated?",
+    "ground_truth": "QuantumSemi Systems is situated in Dresden, Germany.",
+    "expected_entities": ["QuantumSemi Systems", "Dresden", "Germany"],
+    "complexity": "Single-Hop"
+  },
+  {
+    "id": "Q-034",
+    "question": "What happens if TMS-2 operates at 50°C for extended periods?",
+    "ground_truth": "EnerCell Solutions cell packs remain warrantied up to 55°C, but coolant pump failure would trigger Emergency Thermal Cutoff Fuse ETF-9 if temperature exceeds safe thresholds.",
+    "expected_entities": ["TMS-2", "EnerCell Solutions", "55°C", "ETF-9"],
+    "complexity": "Multi-Hop"
+  },
+  {
+    "id": "Q-035",
+    "question": "If Nordic Mining Group replaces Cobalt Core Metals, how long does EnerCell Solutions have to make the transition?",
+    "ground_truth": "EnerCell Solutions must transition all raw cobalt procurement within 90 days.",
+    "expected_entities": ["Nordic Mining Group", "Cobalt Core Metals", "EnerCell Solutions", "90 days"],
+    "complexity": "Multi-Hop"
+  }
+]

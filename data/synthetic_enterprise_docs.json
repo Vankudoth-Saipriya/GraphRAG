@@ -1,0 +1,50 @@
+[
+  {
+    "id": "DOC-001",
+    "title": "Global Semiconductor & Component Sourcing Policy 2026",
+    "category": "Supply Chain",
+    "content": "Apex Dynamics relies on primary semiconductor supplier NexusChip Corp for microcontrollers (Model NX-9000). NexusChip Corp operates key fabrication facilities in Taiwan and South Korea. Under the 2026 Dual-Sourcing Imperative, all NX-9000 microcontrollers used in Autonomous Drive Unit ADU-7 must have a secondary certified supplier. QuantumSemi Systems, based in Dresden, Germany, is designated as the primary fallback supplier for NX-9000. If Taiwan facilities experience supply disruption exceeding 14 days, QuantumSemi Systems automatically assumes 60% of total production volume. Component NX-9000 directly integrates with Sensor Pack SP-3 manufactured by OptiSense Systems in Japan."
+  },
+  {
+    "id": "DOC-002",
+    "title": "EU Cyber Resilience & AI Act Compliance Framework",
+    "category": "Regulatory Compliance",
+    "content": "The European Union Cyber Resilience Act (CRA) mandate requires all embedded software in Autonomous Drive Unit ADU-7 to undergo continuous vulnerability monitoring. Software module DriveOS v4.2, authored by CoreLogic GmbH, contains third-party cryptographic library LibCrypto-X. Under EU Directive 2026/89, LibCrypto-X must maintain FIPS 140-3 Level 3 certification. If LibCrypto-X fails vulnerability audit VA-2026, Autonomous Drive Unit ADU-7 cannot be distributed within EU member states. Compliance documentation must be submitted to the European Telecommunications Standards Institute (ETSI) prior to Q3 distribution."
+  },
+  {
+    "id": "DOC-003",
+    "title": "Battery Module Sub-Assembly & Thermal Safety Protocol",
+    "category": "Product Engineering",
+    "content": "Product Titan PowerPack P-500 contains 16 lithium-ion cell packs supplied by EnerCell Solutions. Each cell pack utilizes Nickel-Manganese-Cobalt (NMC-811) chemistry. Thermal Management System TMS-2, engineered by CoolTech Systems, uses synthetic dielectric coolant Coolant-X7 to maintain temperature below 45°C. In the event of TMS-2 coolant pump failure, Emergency Thermal Cutoff Fuse ETF-9, manufactured by Safetron Inc, triggers circuit interruption within 250 milliseconds. EnerCell Solutions cell packs are warrantied for 5,000 thermal cycles provided operating temperatures do not exceed 55°C."
+  },
+  {
+    "id": "DOC-004",
+    "title": "Conflict Mineral & ESG Audit Requirements",
+    "category": "ESG Compliance",
+    "content": "Apex Dynamics ESG Policy Section 4 requires quarterly cobalt and tantalum origin tracing. Cobalt utilized in EnerCell Solutions cell packs must originate exclusively from verified responsible mining operations certified by the Responsible Minerals Initiative (RMI). Refiner Cobalt Core Metals in Katanga region is currently under conditional audit status CS-2025. If Cobalt Core Metals fails RMI re-certification by June 2026, EnerCell Solutions must transition all raw cobalt procurement to Nordic Mining Group in Norway within 90 days to maintain Titan PowerPack P-500 ESG compliance certification."
+  },
+  {
+    "id": "DOC-005",
+    "title": "Autonomous Drive Unit ADU-7 Product Architecture",
+    "category": "Product Engineering",
+    "content": "Autonomous Drive Unit ADU-7 combines Microcontroller NX-9000, Sensor Pack SP-3, and Software Module DriveOS v4.2 into a unified chassis. Power distribution for ADU-7 is managed by Power Management IC PM-400 manufactured by SiliconPower Inc. Sensor Pack SP-3 includes LiDAR module L-100 and Optical Camera Array C-40. If Optical Camera Array C-40 lens coating exhibits degradation, DriveOS v4.2 triggers Fallback Perception Mode FPM-2, switching primary navigation reliance to LiDAR module L-100."
+  },
+  {
+    "id": "DOC-006",
+    "title": "North American Trade Agreement & Regional Content Rules",
+    "category": "Trade Compliance",
+    "content": "Under USMCA Regional Value Content (RVC) rules, Autonomous Drive Unit ADU-7 must achieve a minimum of 75% North American manufacturing origin to qualify for tariff-free import into the United States and Canada. Assembly operations performed at Apex Assembly Plant in Austin, Texas contribute 40% RVC. Silicon Power Inc (Austin, TX) and OptiSense USA (San Jose, CA) provide qualifying regional components. If NexusChip Corp microcontrollers are imported from Taiwan without US processing, they contribute 0% towards RVC threshold."
+  },
+  {
+    "id": "DOC-007",
+    "title": "Supplier Risk & Financial Insolvency Mitigation Plan",
+    "category": "Vendor Risk",
+    "content": "CoreLogic GmbH is classified as Tier-1 High-Risk vendor due to financial restructuring in Q1 2026. Escrow Agreement EA-809 requires CoreLogic GmbH to maintain source code repository for DriveOS v4.2 in secure third-party escrow with NCC Group. In the event of CoreLogic GmbH insolvency or bankruptcy filing, Apex Dynamics retains immediate rights to license source code and assume in-house software maintenance. Escrow audit is performed semi-annually by Deloitte Audit LLP."
+  },
+  {
+    "id": "DOC-008",
+    "title": "Titan PowerPack P-500 Distribution & Field Safety Recall Protocol",
+    "category": "Quality & Operations",
+    "content": "Field Recall Protocol FRP-102 applies to Titan PowerPack P-500 units deployed in high-humidity tropical zones (Zone 4B). If Emergency Thermal Cutoff Fuse ETF-9 displays corrosion rate exceeding 5 microns/year during annual inspection, total sub-assembly replacement is mandatory. Replacement kits are stock-held at Regional Logistics Center RLC-Singapore and RLC-Panama. Recall operations are coordinated by Global Service Operations VP Sarah Jenkins."
+  }
+]
